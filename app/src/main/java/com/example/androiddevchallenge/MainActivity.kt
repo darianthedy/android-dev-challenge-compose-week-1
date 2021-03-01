@@ -18,11 +18,20 @@ package com.example.androiddevchallenge
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 class MainActivity : AppCompatActivity() {
@@ -40,7 +49,54 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun MyApp() {
     Surface(color = MaterialTheme.colors.background) {
-        Text(text = "Ready... Set... GO!")
+        Column(modifier = Modifier.padding(16.dp)) {
+            Header()
+            Content(dogeList)
+        }
+    }
+}
+
+@Composable
+private fun Header() {
+    Text(
+        modifier = Modifier.fillMaxWidth(),
+        style = MaterialTheme.typography.h4,
+        text = "Good Doggos",
+    )
+}
+
+@Composable
+private fun Content(list: List<Doge>) {
+    LazyColumn(
+        modifier = Modifier.padding(top = 16.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        items(list.size) { index ->
+            DoggoCard(list[index])
+        }
+    }
+}
+
+@Composable
+private fun DoggoCard(doge: Doge) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { },
+        elevation = 4.dp,
+    ) {
+        Column(
+            modifier = Modifier.padding(8.dp),
+        ) {
+            Text(
+                style = MaterialTheme.typography.h6,
+                text = doge.name,
+            )
+            Text(
+                style = MaterialTheme.typography.subtitle1,
+                text = doge.shortDescription,
+            )
+        }
     }
 }
 
