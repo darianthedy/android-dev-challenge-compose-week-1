@@ -1,0 +1,55 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.example.androiddevchallenge
+
+internal data class Doggo(
+    val name: String = "",
+    val shortDescription: String = "",
+    val longDescription: String = "",
+)
+
+internal val doggoList = listOf(
+    Doggo(
+        "Chihuahua", "Smallest breeds of dog",
+        "Chihuahuas are the smallest breed recognized by some kennel clubs.\n" +
+            "\n" +
+            "There are two varieties of Chihuahua – the Smooth Coat (smooth-haired) and the Long Coat (long-haired). The Kennel Club considers the two to be distinct breeds; mating between the two are not eligible for KC registration.\n" +
+            "\n" +
+            "Both the Smooth and Long Coats have their special attractions and are equally easy to keep clean and well-groomed. The term smooth coat does not mean that the hair is necessarily smooth, as the hair can range from having a velvet touch to a whiskery feel. Longhaired Chihuahuas are actually smoother to the touch, having soft, fine-guard hairs and a downy undercoat, which gives them their fluffy appearance. Unlike many longhaired breeds, longhaired Chihuahuas require no trimming and minimal grooming. Contrary to popular belief, the longhaired breed also typically sheds less than its shorthaired counterparts. It may take up to three or more years before a full longhaired coat develops."
+    ),
+    Doggo("Dalmatian", "Dog with unique white coat marked with black spots", "The first known written information about Dalmatian dog is from 1374, when Bishop of Đakovo, Peter mentions hunting dog from Croatia, mostly from Dalmatia with short white hair and black round spots on various parts of the body, and he called him \"Canis Dalmaticus\". The first illustrations of the dog have been found in Croatia: an altar painting in Veli Lošinj dating to 1600–1630, and a fresco in Zaostrog. The first documented descriptions of the Dalmatian (Croatian: Dalmatinski pas, Dalmatiner, Dalmatinac) trace back to the early 18th century and the archives of the Archdiocese of Đakovo, where the dog was mentioned and described as Canis Dalmaticus in the church chronicles from 1719 by Bishop Petar Bakić and then again by church chronicles of Andreas Keczkeméty in 1739. In 1771, Thomas Pennant described the breed in his book Synopsis of Quadrupeds, writing that the origin of the breed is from Dalmatia, he referred to it as Dalmatian. The book by Thomas Bewick A General History of Quadrupeds published in 1790 refers to the breed as Dalmatian or Coach Dog."),
+    Doggo("German Shepherd", "Working dog that originated in Germany", "As a herding dog, German Shepherds are working dogs developed originally for herding sheep. Since that time, however, because of their strength, intelligence, trainability, and obedience, German Shepherds around the world are often the preferred breed for many types of work, including disability assistance, search-and-rescue, police and military roles and acting. The German Shepherd is the second-most registered breed by the American Kennel Club and seventh-most registered breed by The Kennel Club in the United Kingdom."),
+    Doggo("Shiba", "Hunting dog from Japan", "A small, alert and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu was originally bred for hunting. It looks similar to and is often mistaken for other Japanese dog breeds such as the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct blood line, temperament, and smaller size than other Japanese dog breeds."),
+    Doggo("Siberian Husky", "Medium-sized working sled dog breed", "Siberian Huskies originated in Northeast Asia where they are bred by the Chukchi people of Siberia for sled-pulling, and companionship. It is an active, energetic, resilient breed, whose ancestors lived in the extremely cold and harsh environment of the Siberian Arctic. William Goosak, a Russian fur trader, introduced them to Nome, Alaska during the Nome Gold Rush, initially as sled dogs. Today, the Siberian Husky is typically kept as a house pet, though they are still frequently used as sled dogs by competitive and recreational mushers."),
+    Doggo("Golden Retriever", "Medium-large gun dog that was bred to retrieve shot waterfowl", "The name \"retriever\" refers to the breed's ability to retrieve shot game undamaged due to their soft mouth. Golden retrievers have an instinctive love of water, and are easy to train to basic or advanced obedience standards. They are a long-coated breed, with a dense inner coat that provides them with adequate warmth in the outdoors, and an outer coat that lies flat against their bodies and repels water. Golden retrievers are well suited to residency in suburban or country environments. They shed copiously, particularly at the change of seasons, and require fairly regular grooming. The Golden Retriever was originally bred in Scotland in the mid-19th century."),
+    Doggo("Bulldog", "Muscular, hefty dog with a wrinkled face and a distinctive pushed-in nose", "Bulldogs have characteristically wide heads and shoulders along with a pronounced mandibular prognathism. There are generally thick folds of skin on the brow; round, black, wide-set eyes; a short muzzle with characteristic folds called a rope or nose roll above the nose; hanging skin under the neck; drooping lips and pointed teeth, and an underbite with an upturned jaw. The coat is short, flat, and sleek with colours of red, fawn, white, brindle, and piebald."),
+    Doggo("Kintamani", "Dog native to the Indonesian island of Bali", "The Kintamani looks something like a mix between the Samoyed and a Malamute. They have long hair, a broad face, a flat forehead, and flat cheeks like Chinese dogs such as the Chow Chow and are amenable to life as a pet. Whilst many live much the same kind of life as an average village dog, they dig holes to nest their young and some live in small caves among the boulders around Kintamani. They are locally considered good-looking dogs are more often sought after as good pets. The Kintamani dog is gentle around people, yet retains enough assertive behavior to render it a noteworthy (but not vicious) watchdog."),
+    Doggo("Welsh Sheepdog", "Landrace of herding dog from Wales", "Welsh Sheepdogs are primarily herding dogs who have a natural ability with large flocks of sheep or cattle. Some have been trained to compete in dog agility trials, obedience, rally obedience, flyball, tracking, and herding events. Herding instincts and trainability can be measured at noncompetitive herding tests. Welsh Sheepdogs can be trained to compete in stock dog trials."),
+    Doggo(
+        "Pomeranian", "Toy dog breed because of its small size",
+        "Pomeranians are small dogs weighing 1.36–3.17 kilograms (3.0–7.0 lb) and standing 8–14 inches (20–36 cm) high at the withers. They are compact but sturdy dogs with an abundant textured coat with a highly plumed tail set high and flat. The top coat forms a ruff of fur on the neck, which Poms are well known for, and they also have a fringe of feathery hair on the hindquarters.\n" +
+            "\n" +
+            "The earliest examples of the breed were white or occasionally brown or black. Queen Victoria adopted a small red Pomeranian in 1888, which caused that color to become fashionable by the end of the 19th century. In modern times, the Pomeranian comes in the widest variety of colors of any dog breed, including white, black, brown, red, orange, cream, blue, sable, black and tan, brown and tan, spotted, brindle, and parti, plus combinations of those colors. The most common colors are orange, black, or cream/white."
+    ),
+    Doggo(
+        "Papillon", "Butterfly-like look of the long and fringed hair on the ears",
+        "Papillons are very intelligent and self-assured dogs that have a very easy time learning new tricks. These dogs can be sociable with children and strangers, but are generally reserved around new people. They can also be socialized to get along well with other pets, but care should be taken with rambunctious pets or cats with claws, as they may injure them. If not properly socialized, Papillons can be distrustful and exhibit aggressive tendencies toward other dogs and people. Papillons may also be very playful and affectionate. Widely known as great companion dogs, they have the spirit and energy to keep up with active families, but can also be calm enough to be happy with sleeping in the arms of an equally affectionate owner. Due to their high energy level, they demand an augmented exercise routine, relative to the average companion breed. Papillons are known as excellent watchdogs, as they will alert their owner to changes in their environment. They may be considered garrulous like many other toy dogs. They can withstand heat, but are more sensitive to cold temperatures because of their single-coated fur, and should not be left outside unattended in cold weather.\n" +
+            "\n" +
+            "The most iconic aspect of Papillons are their ears, which are large and well fringed, giving them a butterfly wing-like appearance. Papillons are particolored or white with patches of any color. An all-white dog or a dog with no white is disqualified from the conformation show ring. A blaze (area of white extending down between the eyes) and noseband is preferred over a solid-colored head, but not required. Nose, eye rims, and lips should be black. Paw pads vary in color from black to pink, depending on the coloring of the dog."
+    ),
+    Doggo("Bloodhound", "Originally bred for hunting deer, wild boar, and tracking people", "Bloodhounds weigh from 36 to 72 kg (80 to 160 lbs). They are 58 to 69 cm (23 to 27 inches) tall at the withers. According to the AKC standard for the breed, larger dogs are preferred by conformation judges. Acceptable colors for Bloodhounds are black, liver, and red. Bloodhounds possess an unusually large skeletal structure with most of their weight concentrated in their bones, which are very thick for their length. The coat, typical for a scent hound, is hard and composed of fur alone, with no admixture of hair."),
+    Doggo("Bolognese", "Small dog breed of the bichon type, originating in Italy", "The name refers to the northern Italian city of Bologna. It is part of the toy dog group and is considered a companion dog. They love attention, and make good house pets. They are good at socializing with other dogs, big and small. They have a strong bond with the person/s with whom they spend the most time."),
+)
